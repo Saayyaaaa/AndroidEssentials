@@ -7,5 +7,7 @@
     <string name="broadcast_receiver">Broadcast Receiver</string>
     <string name="content_provider">Content Provider</string>
     <string name="main_fragment">Main Fragment</string>
+    <string name="choose_txt">Choose</string>
+    <string name="share_txt">Share</string>
 
 </resources>
