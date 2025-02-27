@@ -1,0 +1,10 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="milky">#F4E9DF</color>
+    <color name="pink">#D0F69D9D</color>
+    <color name="blue_bk">#D0B2E3F8</color>
+    <color name="green_bk">#D0C0F8DB</color>
+    <color name="red_bk">#D0FFC6C6</color>
+    <color name="brown_bk">#3B381F03</color>
+</resources>
