@@ -35,7 +35,7 @@
         tools:layout="@layout/fragment_foreground_service" />
     <fragment
         android:id="@+id/broadcastReceiver"
-        android:name="com.example.androidessentials.BroadcastReceiver"
+        android:name="com.example.androidessentials.BroadcastReceiverFragment"
         android:label="fragment_broadcast_receiver"
         tools:layout="@layout/fragment_broadcast_receiver" />
     <fragment
