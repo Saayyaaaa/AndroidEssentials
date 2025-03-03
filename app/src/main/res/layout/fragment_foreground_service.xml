@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ForegroundService"
-    android:background="@color/green_bk">
+    android:background="@color/green_bk"
+    android:layout_gravity="center"
+    android:gravity="center">
 
-</FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/previous"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Previous Track"/>
+
+    <ImageButton
+        android:id="@+id/btnPlayStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Next Track"/>
+
+
+</LinearLayout>
