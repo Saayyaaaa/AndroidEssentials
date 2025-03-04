@@ -15,6 +15,7 @@ class ForegroundService : Fragment() {
 
     private lateinit var btnPlayStop: ImageButton
     private var isPlaying = false
+    private lateinit var goBack: ImageButton
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,6 +31,7 @@ class ForegroundService : Fragment() {
         val btnPrevious = view.findViewById<ImageButton>(R.id.btnPrevious)
         btnPlayStop = view.findViewById(R.id.btnPlayStop)
         val btnNext = view.findViewById<ImageButton>(R.id.btnNext)
+        goBack = view.findViewById(R.id.go_back_btn)
 
         btnPlayStop.setOnClickListener {
             togglePlayStop()
@@ -43,6 +45,10 @@ class ForegroundService : Fragment() {
         btnNext.setOnClickListener {
             sendMusicAction("ACTION_NEXT")
             Toast.makeText(requireContext(), "Следующий трек", Toast.LENGTH_SHORT).show()
+        }
+
+        goBack.setOnClickListener {
+            requireActivity().supportFragmentManager.popBackStack()
         }
     }
 

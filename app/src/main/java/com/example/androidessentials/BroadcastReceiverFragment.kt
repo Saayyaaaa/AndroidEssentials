@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 
@@ -16,6 +17,7 @@ class BroadcastReceiverFragment : Fragment() {
 
     private lateinit var airplaneModeReceiver: BroadcastReceiver
     private lateinit var statusTextView: TextView
+    private lateinit var goBack: ImageButton
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,6 +30,7 @@ class BroadcastReceiverFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         statusTextView = view.findViewById(R.id.statusTextView)
+        goBack = view.findViewById(R.id.go_back_btn)
 
         airplaneModeReceiver = object : BroadcastReceiver() {
             override fun onReceive(context: Context?, intent: Intent?) {
@@ -41,6 +44,10 @@ class BroadcastReceiverFragment : Fragment() {
                 }
 
             }
+        }
+
+        goBack.setOnClickListener {
+            requireActivity().supportFragmentManager.popBackStack()
         }
     }
 

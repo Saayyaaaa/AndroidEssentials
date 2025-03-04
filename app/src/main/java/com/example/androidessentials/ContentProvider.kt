@@ -5,8 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 
 class ContentProvider : Fragment() {
+
+    private lateinit var goBack: ImageButton
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -14,6 +17,16 @@ class ContentProvider : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_content_provider, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        goBack = view.findViewById(R.id.go_back_btn)
+
+        goBack.setOnClickListener {
+            requireActivity().supportFragmentManager.popBackStack()
+        }
     }
 
 }

@@ -4,7 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BroadcastReceiverFragment"
-    android:background="@color/red_bk">
+    android:background="@color/red_bk"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/go_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/go_back" />
 
     <TextView
         android:id="@+id/statusTextView"

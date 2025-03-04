@@ -10,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 
 class IntentsDeepLinking : Fragment() {
@@ -17,6 +18,7 @@ class IntentsDeepLinking : Fragment() {
     val REQUEST_CODE = 1
     private lateinit var imageView: ImageView
     private lateinit var galleryBtn: Button
+    private lateinit var goBack: ImageButton
 
     private var selectedImageUri: Uri? = null
 
@@ -29,11 +31,17 @@ class IntentsDeepLinking : Fragment() {
         val view = inflater.inflate(R.layout.fragment_intents_deep_linking, container, false)
         imageView = view.findViewById(R.id.imageView)
         galleryBtn = view.findViewById(R.id.galleryBtn)
+        goBack = view.findViewById(R.id.go_back_btn)
+
 
 
         galleryBtn.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
             startActivityForResult(intent, REQUEST_CODE)
+        }
+
+        goBack.setOnClickListener {
+            requireActivity().supportFragmentManager.popBackStack()
         }
 
         return view
