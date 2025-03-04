@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.androidessentials.MainFragment"
+        android:name="com.example.androidessentials.fragments.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -25,22 +25,22 @@
     </fragment>
     <fragment
         android:id="@+id/intentsDeepLinking"
-        android:name="com.example.androidessentials.IntentsDeepLinking"
+        android:name="com.example.androidessentials.fragments.IntentsDeepLinking"
         android:label="fragment_intents_deep_linking"
         tools:layout="@layout/fragment_intents_deep_linking" />
     <fragment
         android:id="@+id/foregroundService"
-        android:name="com.example.androidessentials.ForegroundService"
+        android:name="com.example.androidessentials.fragments.ForegroundService"
         android:label="fragment_foreground_service"
         tools:layout="@layout/fragment_foreground_service" />
     <fragment
         android:id="@+id/broadcastReceiver"
-        android:name="com.example.androidessentials.BroadcastReceiverFragment"
+        android:name="com.example.androidessentials.fragments.BroadcastReceiverFragment"
         android:label="fragment_broadcast_receiver"
         tools:layout="@layout/fragment_broadcast_receiver" />
     <fragment
         android:id="@+id/contentProvider"
-        android:name="com.example.androidessentials.ContentProvider"
+        android:name="com.example.androidessentials.fragments.ContentProvider"
         android:label="fragment_content_provider"
         tools:layout="@layout/fragment_content_provider" />
 

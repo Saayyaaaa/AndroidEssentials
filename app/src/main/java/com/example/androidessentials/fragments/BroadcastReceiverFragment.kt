@@ -1,4 +1,4 @@
-package com.example.androidessentials
+package com.example.androidessentials.fragments
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import com.example.androidessentials.R
 
 class BroadcastReceiverFragment : Fragment() {
 

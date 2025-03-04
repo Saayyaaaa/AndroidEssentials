@@ -1,4 +1,4 @@
-package com.example.androidessentials
+package com.example.androidessentials.fragments
 
 import android.app.Activity
 import android.content.Intent
@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
+import com.example.androidessentials.R
 
 class IntentsDeepLinking : Fragment() {
 

@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/milky"
-    tools:context=".MainFragment">
+    tools:context=".fragments.MainFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:layout_width="300dp"
             android:layout_height="100dp"
             android:backgroundTint="@color/pink"
-            android:text="@string/foreground_service"
+            android:text="@string/intents_and_deep_linking"
             android:textColor="@color/black"
             android:textSize="30dp"
             android:layout_marginTop="30dp"
@@ -48,7 +48,7 @@
             android:layout_width="300dp"
             android:layout_height="100dp"
             android:backgroundTint="@color/pink"
-            android:text="@string/foreground_service"
+            android:text="@string/broadcast_receiver"
             android:textColor="@color/black"
             android:textSize="30dp"
             android:layout_marginTop="30dp"
@@ -62,7 +62,7 @@
             android:layout_width="300dp"
             android:layout_height="100dp"
             android:backgroundTint="@color/pink"
-            android:text="@string/foreground_service"
+            android:text="@string/content_provider"
             android:textColor="@color/black"
             android:textSize="30dp"
             android:layout_marginTop="30dp"
